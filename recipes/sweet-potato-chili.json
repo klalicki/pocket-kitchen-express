@@ -4,7 +4,8 @@
         "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/hero-img.jpg",
         "description": "This hearty soup is great for a chilly fall day!",
         "time": "about 30 minutes",
-        "timercount": "5"
+        "timercount": "5",
+        "disabled":"false"
     },
     "ingredients": [{
         "name": "olive oil",

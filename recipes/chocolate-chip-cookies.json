@@ -4,7 +4,8 @@
         "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/hero-img.jpg",
         "description": "These cookies are soft and chewy on the inside, with a light crust on the outside.",
         "time": "about 30 minutes",
-        "timercount": "5"
+        "timercount": "5",
+        "disabled":"false"
     },
     "ingredients": [{
         "name": "butter or margarine",

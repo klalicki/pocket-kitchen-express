@@ -5,7 +5,7 @@
         "description": "This classic pizza recipe makes enough dough for 2 12-inch pies. You can freeze half of the dough to make later, or make both at once!",
         "time": "about 1 hour, plus about 1 hour to rise",
         "timercount": "5",
-        "disabled":"true"
+        "disabled":"false"
     },
     "ingredients": [{
         "name": "all-purpose flour",
