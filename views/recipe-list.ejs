@@ -88,7 +88,11 @@
             
             <% recipeMeta.forEach((item)=>{ %>
                 <div class="home-card filter-all" data-recipe-id="<%= item.slug %>">
-                    
+                    <% if (item.disabled==="true"){ %> 
+                        <div class="coming-soon-mask">
+                            <h2>coming soon!</h2>
+                        </div>
+                        <%}%>
                     <div>
                         <img src="<%= item.hero_img %>" alt="" class="home-card-pic">
                         <h2 class="home-card-title"><%= item.title %></h2>
