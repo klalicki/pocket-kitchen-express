@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Recipe Page</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/main.css?v=7">
+    <link rel="stylesheet" href="css/swiper.css">
+    
+
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script>
+//figure out how to parse recipe query
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}   ;
+recipeName=getQueryVariable('recipe');
+
+    </script>
+    <script src="scripts/jquery.color.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/easytimer.min.js"></script>
+
+    <script src="scripts/screenfull.min.js"></script>
+    <script src="scripts/jquery.touchSwipe.min.js"></script>
+
+    <script src="scripts/ajax.js"></script>
+    <!-- script to load in content will eventually go here.-->
+</head>
+
+<body>
+    <div class="loading-screen">
+        <h1>loading...<br>please wait</h1>
+    </div>
+    <div id="fullscreen-banner">
+        <h1>For a more immersive experience, this site can be run in fullscreen mode. Click anywhere to enter fullscreen mode.</h1>
+    </div>
+    <div class="timer-popup">
+        <div class="fake-bar"></div>
+        <div class="popup-container">
+            <div class="timer-container">
+                <h1 class="timer-time">0</h1>
+                <div class="timer-button-container">
+                    <button class="timer-button timer-popup-close">TIMER FINISHED</button>
+
+                </div>
+            </div>
+            <div class="card text-card">
+                <p class="instructions">
+                    Please click anywhere to return to the recipe.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <div id="top-bar">
+            <button id="back-button">
+                <img src="IMG/back-arrow.png" class="img-stretch" alt="">
+            </button>
+            <h2 id="top-bar-title"></h2>
+        </div>
+        <div class="main-section">
+            <div class="persistent-timer-container">
+                <div class="persistent-timer-row">
+                    <img src="IMG/timer-icon.png" alt="" class="persistent-timer-icon">
+                    <h4 class="persistent-timer"></h4>
+                </div>
+                <div class="persistent-timer-drawer">
+                    <!-- <button class="persistent-timer-button persistent-timer-pause">PAUSE</button>
+                    <button class="persistent-timer-button persistent-timer-reset">RESET</button> -->
+                </div>
+
+            </div>
+
+
+
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div id="bottom-bar">
+            <div class="progress-container">
+                <div id="progress-bar">
+
+                </div>
+                <div id="progress-arrow">
+                    <img src="IMG/progress-arrow.png" alt="">
+                </div>
+            </div>
+            <div id="bottom-bar-flex">
+                <h2 class="bottom-bar-text">
+                    <span id="curContainer"></span> /
+                    <span id="totalContainer"></span>
+                </h2>
+                <h2 class="bottom-bar-text">
+                    15min.
+                </h2>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="menu-panel">
+        <button id="btn-close-menu">
+            <img src="IMG/close-button.png" class="img-stretch" alt="">
+        </button>
+        <ul class="menu-list">
+
+        </ul>
+    </div>
+    <div id="screen-overlay"></div>
+    <script src="scripts/recipe-ui.js"></script>
+    <script defer>
+       setTimeout(function(){ mySwiper.update();
+        setFooter();
+        fixHeight();
+    $('.loading-screen').fadeOut();}, 800);
+    </script>
+</body>
+
+</html>

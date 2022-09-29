@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/jquery.color.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/screenfull.min.js"></script>
+    <script src="scripts/jquery.touchSwipe.min.js"></script>
+</head>
+
+<body>
+    <div class="white-overlay"></div>
+    <div id="top-container">
+
+
+        <div id="top-bar">
+            <h2 class="app-branding">pocket kitchen</h2>
+        </div>
+        <div id="filter-bar">
+            <h2 id="current-filter">Filter</h2>
+            <button id="filter-menu-arrow">
+                <img src="img/dropdown-button.png" alt="" class="dropdown-button">
+            </button>
+        </div>
+        <div id="filter-dropdown" class="filter-hide">
+            <h3 class="dropdown-link" data-filter="filter-all">All Recipes</h3>
+
+            <h3 class="dropdown-link" data-filter="filter-quick">Quick Meals</h3>
+
+            <h3 class="dropdown-link" data-filter="filter-classics">Classics</h3>
+
+        </div>
+    </div>
+    <div class="screen-shade"></div>
+    <div class="page-container">
+        <div class="home-card-container">
+
+            
+            <div class="home-card filter-all" data-recipe-id="sweet-potato-chili">
+                    <div>
+                <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/hero-img.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Sweet Potato Chili</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all filter-classics" data-recipe-id="easy-pizza">
+                <div>
+                <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/easypizza/hero-img.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Easy Pizza</h2>
+            </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all filter-classics filter-quick">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Classic Mac & Cheese</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all filter-classics filter-quick">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Soft & Chewy Chocolate Chip Cookies</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Classic Cornbread</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home-card filter-all filter-quick">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">General Tso's Tofu Stir Fry</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="home-card filter-all">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Seitan</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Seitan Fajitas</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all">
+                    <div>
+                <img src="https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Red Lentil & Spinach Soup</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="IMG/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    arrowstate = false;
+    fixArrow();
+    $(document).ready(function () {
+
+        arrowstate: false;
+    })
+</script>
+<script>
+    function fixArrow() {
+
+        switch (arrowstate) {
+            case false:
+                $('#filter-dropdown').removeClass('menu-show');
+                $('.dropdown-button').removeClass('button-rotated');
+                $('.screen-shade').removeClass('screen-shade-show');
+                break;
+            case true:
+                $('.dropdown-button').addClass('button-rotated');
+                $('#filter-dropdown').addClass('menu-show');
+                $('.screen-shade').addClass('screen-shade-show');
+
+                break;
+        }
+    };
+
+    function showItems(itemStr) {
+        $('.home-card').not("." + itemStr).fadeOut();
+        $("." + itemStr).fadeIn();
+    };
+    $(document).ready(function () {
+        arrowstate = false;
+        fixArrow();
+
+        $('.white-overlay').fadeOut();
+
+        $('#filter-menu-arrow, #current-filter').click(function () {
+            arrowstate = !arrowstate;
+            fixArrow();
+
+        });
+
+        $('.dropdown-link').click(function () {
+            // console.log($(this).attr('data-filter'));
+            $('#current-filter').text($(this).text());
+            filterStr = $(this).attr('data-filter');
+            arrowstate = false;
+            fixArrow();
+            showItems(filterStr);
+
+        });
+        $('.home-card').click(function () {
+            targetpage = $(this).attr('data-recipe-id');
+            //console.log(targetpage);
+            newURL = "recipe.html?recipe=" + targetpage;
+            //do-animations
+            $('body').fadeOut(function(){
+                window.location.href = '/'+newURL;
+            })
+
+           
+            //console.log(window.location.hostname);
+
+
+        })
+
+
+    })
+</script>
+
+</html>

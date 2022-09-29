@@ -1,0 +1,103 @@
+{
+    "meta": {
+        "title": "Chocolate Chip Cookies",
+        "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/hero-img.jpg",
+        "description": "These cookies are soft and chewy on the inside, with a light crust on the outside.",
+        "time": "about 30 minutes",
+        "timercount": "5"
+    },
+    "ingredients": [{
+        "name": "butter or margarine",
+        "qty": "1/2",
+        "unit": "cup",
+        "notes": ""
+    }, {
+        "name": "white sugar",
+        "qty": "1/2",
+        "unit": "cup",
+        "notes": ""
+    }, {
+        "name": "brown sugar",
+        "qty": "1/4",
+        "unit": "cup",
+        "notes": ""
+    }, {
+        "name": "vanilla extract",
+        "qty": "1",
+        "unit": "tsp",
+        "notes": ""
+    }, {
+        "name": "egg",
+        "qty": "1",
+        "unit": "",
+        "notes": ""
+    }, {
+        "name": "all-purpose flour",
+        "qty": "1 1/2",
+        "unit": "cups",
+        "notes": ""
+    }, {
+        "name": "salt",
+        "qty": "1/4",
+        "unit": "tsp",
+        "notes": ""
+    }, {
+        "name": "chocolate chips",
+        "qty": "3/4",
+        "unit": "cup",
+        "notes": ""
+    }],
+    "steps": [ {
+        "type": "big-number",
+        "vidsrc": "",
+        "caption": "melt butter",
+        "bignum": "350°",
+        "instructions": "Preheat oven to 350° F."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step1-2.mp4",
+        "caption": "",
+        "instructions": "Melt 1/2 cup butter or margarine in a microwave-safe bowl."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step3.mp4",
+        "caption": "make a batter",
+        "instructions": "Add 1/2 cup white sugar and 1/4 cup brown sugar, and stir until smooth."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step4.mp4",
+        "caption": "add seasoning",
+        "instructions": "Add 1 tsp. vanilla and 1 egg, and stir until smooth."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step5.mp4",
+        "caption": "cut cauliflower",
+        "instructions": "Add 1/2 cup of flour, 1/2 tsp. baking soda, and 1/4 tsp. salt, and stir until smooth."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step7.mp4",
+        "caption": "batter the cauliflower",
+        "instructions": "Add the remaining 1 cup of flour, and mix until fully combined."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step8.mp4",
+        "caption": "spread the cauliflower",
+        "instructions": "Add 3/4 cup chocolate chips, and mix in with your hands."
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step9.mp4",
+        "caption": "spread the cauliflower",
+        "instructions": "Roll the dough into golf-ball-sized pieces, and place 2-3 inches apart on a baking sheet."
+    }, {
+        "type": "timer-single",
+        "time": "540",
+        "timerID": "0",
+        "caption": "bake",
+        "instructions": "Bake in a 350° F oven for 9-11 minutes"
+    }, {
+        "type": "video",
+        "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step11.mp4",
+        "caption": "spread the cauliflower",
+        "instructions": "Allow the cookies to cool on the baking sheet for 5-10 minutes before removing. To keep the cookies soft for longer, store them in an air-tight container."
+    }]
+}

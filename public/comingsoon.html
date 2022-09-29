@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97203736-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97203736-5');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/pk_icon.ico" />
+    <<title>pocket kitchen</title>
+        <script src="scripts/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="fullscreen-center">
+        <div class="center-container">
+            <h1>Coming Soon!</h1>
+            <p>A desktop version of
+                <span class="bold">pocket kitchen</span> is in the works! For now, feel free to visit this site on your mobile device to use
+                the app.</p>
+                <p>You will be redirected to the home page in <span class="redirect">5 seconds.</span></p>
+        </div>
+    </div>
+</body>
+<script>
+    secRemaining=5;
+    $(document).ready(function(){
+        setInterval(function(){
+            secRemaining=secRemaining-1;
+            $('span.redirect').text(secRemaining+" seconds.");
+            if (secRemaining==0){
+                $('body').fadeOut(function(){
+
+                window.location = '/'; 
+                })
+            }
+        }, 1000)
+
+    })
+    //setTimeout(function(){ window.location = '/'; }, 5000);
+</script>
+</html>

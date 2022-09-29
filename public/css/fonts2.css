@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Halcyon';
+    src: url('fonts/Halcyon-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Halcyon-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         
+         url('fonts/Halcyon-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Halcyon-Medium.ttf')  format('truetype');/* Safari, Android, iOS */
+        /* url('wfonts/Halcyon-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight:500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Halcyon';
+    src: url('fonts/Halcyon-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Halcyon-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         
+         url('fonts/Halcyon-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Halcyon-Bold.ttf')  format('truetype');/* Safari, Android, iOS */
+        /* url('wfonts/Halcyon-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight:700;
+    font-style: normal;
+  }

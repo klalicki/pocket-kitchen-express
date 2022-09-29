@@ -1,0 +1,238 @@
+@import url("https://use.typekit.net/npm8kjg.css");
+.page-container {
+  background-color: #F1F1F1;
+}
+
+#top-container {
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.fake-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+}
+
+#top-bar, #filter-bar {
+  z-index: 1000;
+}
+
+#filter-dropdown {
+  position: relative;
+  height: auto;
+  transition: top 300ms ease-in-out;
+  top: -150px;
+  width: 100%;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  z-index: 900;
+  overflow: hidden;
+}
+
+.coming-soon-mask {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9000;
+}
+
+.coming-soon-mask h2 {
+  background-color: #00FF3C;
+  color: white;
+  font-size: 125%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.white-overlay {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+}
+
+.screen-shade {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
+}
+
+.screen-shade-show {
+  opacity: 0.7 !important;
+  pointer-events: auto !important;
+  transition: opacity 300ms ease-in-out;
+}
+
+.menu-show {
+  top: 0 !important;
+  transition: top 300ms ease-in-out;
+}
+
+.dropdown-link {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-rotated {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
+#filter-bar {
+  position: relative;
+  height: 32px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#current-filter {
+  font-size: 20px;
+  line-height: 100%;
+  border-bottom: 2px solid #00FF3C;
+  margin-right: 5vw;
+}
+
+.card-hidden {
+  display: none;
+}
+
+#filter-menu-arrow {
+  background-color: transparent;
+  border: none;
+  font-weight: 800;
+  font-size: 24px;
+  height: 100%;
+  padding: 0;
+}
+
+#top-container {
+  height: 40px;
+}
+
+#top-bar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.dropdown-button {
+  height: 32px;
+  transition: transform 300ms ease-in-out;
+}
+
+.app-branding {
+  font-family: 'Gastromond', serif;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.page-container {
+  padding: 5vw;
+  position: fixed;
+  top: 70px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow-y: scroll;
+}
+
+.home-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 42.5vw;
+  min-height: 42.5vw;
+  margin-bottom: 5vw;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.5);
+}
+
+.home-card-pic {
+  width: 42.5vw;
+  height: 42.5vw;
+}
+
+.home-card-icon-container {
+  width: 19%;
+  position: relative;
+}
+
+.home-card-icon {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.home-card-info-container {
+  display: flex;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.home-card-text-panel {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-card-text-panel {
+  position: relative;
+}
+
+.home-card-text {
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 10px;
+  position: relative;
+}
+
+.home-card-title {
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*# sourceMappingURL=index.css.map */

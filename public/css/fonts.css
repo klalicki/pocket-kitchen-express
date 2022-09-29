@@ -1,0 +1,35 @@
+@import url("https://use.typekit.net/npm8kjg.css");
+
+@font-face {
+    font-family: 'FibraOne';
+    src: url('fonts/FibraOne-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/FibraOne-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         
+         url('fonts/FibraOne-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/FibraOne-Regular.ttf')  format('truetype');/* Safari, Android, iOS */
+        /* url('wfonts/FibraOne-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight:500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FibraOne';
+    src: url('fonts/FibraOne-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/FibraOne-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         
+         url('fonts/FibraOne-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/FibraOne-Light.ttf')  format('truetype');/* Safari, Android, iOS */
+        /* url('wfonts/FibraOne-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight:300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FibraOne';
+    src: url('fonts/FibraOne-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/FibraOne-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         
+         url('fonts/FibraOne-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/FibraOne-Bold.ttf')  format('truetype');/* Safari, Android, iOS */
+        /* url('wfonts/FibraOne-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight:700;
+    font-style: normal;
+  }

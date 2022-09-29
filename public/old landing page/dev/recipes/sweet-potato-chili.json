@@ -1,0 +1,93 @@
+{
+    "meta": {
+        "title": "Sweet Potato Chili",
+        "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/hero-img.jpg",
+        "description": "This hearty soup is great for a chilly fall day!",
+        "time": "about 30 minutes",
+        "timercount": "5"
+    },
+    "ingredients": [{
+        "name": "olive oil",
+        "qty": "2",
+        "unit": "tbsp",
+        "notes": "Olive oil is preferable, but any vegetable oil will work fine."
+    },{
+        "name": "sweet potato",
+        "qty": "1",
+        "unit": "",
+        "notes": ""
+    }, {
+        "name": "large onion",
+        "qty": "1",
+        "unit": "",
+        "notes": ""
+    }, {
+        "name": "minced garlic",
+        "qty": "1",
+        "unit": "tbsp",
+        "notes": ""
+    }, {
+        "name": "chili powder",
+        "qty": "2",
+        "unit": "tbsp.",
+        "notes": ""
+    }, {
+        "name": "ground cumin",
+        "qty": "1",
+        "unit": "tbsp.",
+        "notes": ""
+    }, {
+        "name": "black beans",
+        "qty": "2",
+        "unit": "15-oz. cans",
+        "notes": ""
+    }, {
+        "name": "diced tomatoes",
+        "qty": "1",
+        "unit": "14-oz. can",
+        "notes": ""
+    }],
+    "steps": [{
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step1.mp4",
+            "caption": "",
+            "instructions": "Peel 1 sweet potato and cut it into 1/2 inch cubes."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step2.mp4",
+            "caption": "make a batter",
+            "instructions": "Peel and dice an onion."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step3.mp4",
+            "caption": "make a batter",
+            "instructions": "Heat about 2 tbsp. oil in a large skillet or pot over medium-high heat. When it is hot, add the sweet potato and onion. Cook until the onion begins to soften, stirring occasionally."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step4.mp4",
+            "caption": "add seasoning",
+            "instructions": "Add 1 tbsp. garlic, 2 tbsp. chili powder, and 1 tbsp. cumin, and cook for about 30 seconds, stirring constantly."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step5.mp4",
+            "caption": "cut cauliflower",
+            "instructions": "Add 2 cups water, and bring to a simmer."
+        },{
+            "type": "timer-single",
+            "time": "600",
+            "timerID": "0",
+            "caption": "bake",
+            "instructions": "When the chili begins to simmer, reduce the heat to low, cover the pan, and cook for 10 minutes. By this time, the sweet potato should be soft."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step6.mp4",
+            "caption": "batter the cauliflower",
+            "instructions": "Drain the liquid from 2 cans of beans and 1 can of diced tomatoes, and add them to the chili. Increase the heat to high and cook until the chili has thickened, stirring occasionally."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/step7.mp4",
+            "caption": "spread the cauliflower",
+            "instructions": "Serve the chili hot, traditionally with cheese and/or cornbread."
+        }
+    ]
+}

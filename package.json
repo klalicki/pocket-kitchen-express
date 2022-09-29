@@ -1,0 +1,14 @@
+{
+  "name": "pocket-kitchen-express",
+  "version": "1.0.0",
+  "description": "a video-based cooking app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kristoff lalicki",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

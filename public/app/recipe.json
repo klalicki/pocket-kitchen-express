@@ -1,0 +1,155 @@
+{
+    "meta": {
+        "title": "Buffalo Cauliflower Wings",
+        "hero_img":"https://pbs.twimg.com/profile_images/949374088249671680/MuxDEZpD_400x400.jpg",
+        "description": "This recipe is great for parties!",
+        "time": "1 hour",
+        "timercount":"5"
+    },
+    "ingredients": [{
+        "name": "medium-sized cauliflower",
+        "qty": 1,
+        "unit": "",
+        "notes":""
+    }, {
+        "name": "milk (or almond milk)",
+        "qty": "1/2",
+        "unit": "cup",
+        "notes":"u can rlly use either"
+    }, {
+        "name": "garlic powder",
+        "qty": "1",
+        "unit": "tsp",
+        "notes":""
+    }, {
+        "name": "salt",
+        "qty": "1/2",
+        "unit": "tsp",
+        "notes":""
+    }, {
+        "name": "black pepper",
+        "qty": "1/4",
+        "unit": "tsp",
+        "notes":""
+    }, {
+        "name": "butter or margarine",
+        "qty": "2",
+        "unit": "tbsp",
+        "notes":""
+    }, {
+        "name": "Buffalo-style hot sauce",
+        "qty": "2/3",
+        "unit": "cup",
+        "notes":""
+    }, {
+        "name": "barbecue sauce",
+        "qty": "1/3",
+        "unit": "cup",
+        "notes":""
+    }],
+    "steps": [{
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "grease the pan!",
+            "instructions": "Line a sheet pan with aluminum foil and spray with cooking spray."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "make a batter",
+            "instructions": "Mix 1/2 cup flour and 1/2 cup milk in a large bowl, and stir until smooth."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "add seasoning",
+            "instructions": "Add 1 teaspoon garlic powder, 1/2 teaspoon salt, and 1/4 teaspoon ground pepper to the batter, and mix thoroughly."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "cut cauliflower",
+            "instructions": "Using a paring knife, cut a medium head of cauliflower into nugget-sized pieces. It is easiest to start by removing the central stem, then gradually cutting the pieces smaller and smaller."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "batter the cauliflower",
+            "instructions": "Place the cauliflower pieces in the batter, and stir until evenly coated."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "spread the cauliflower",
+            "instructions": "Pour the cauliflower onto the prepared baking sheet, and spread evenly."
+        }, {
+            "type": "timer-start",
+            "time": "480",
+            "timerID": "0",
+            "caption": "bake",
+            "instructions": "Bake in a 425 degree oven for 8 minutes. Continue to the next step to make sauce for the cauliflower."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "melt butter",
+            "instructions": "In a small glass bowl or measuring cup, melt 2 tablespoons of butter."
+        },
+        {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "make the sauce",
+            "instructions": "Add 2/3 cup hot sauce and 1/3 cup barbecue sauce to the melted butter, and stir until smooth."
+        }, {
+            "type": "timer-end",
+            "timerID": "0",
+            "time": "480",
+            "caption": "wait",
+            "instructions": "Wait for the cauliflower to finish baking."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "melt butter",
+            "instructions": "After the first 8 minutes has passed, use a spatula or fork to flip the cauliflower pieces over."
+        }, {
+            "type": "timer-single",
+            "time":"480",
+            "timerID":"1",
+            "caption": "bake",
+            "instructions": "Put the cauliflower back in the oven and bake for another 8 minutes."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "add the sauce",
+            "instructions": "Pour about half the sauce over the cauliflower, and toss with a spatula to coat."
+        }, {
+            "type": "timer-single",
+            "time":"600",
+            "timerID":"2",
+            "caption": "bake",
+            "instructions": "Put back in the oven for another 10 minutes."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "add more sauce",
+            "instructions": "After 10 minutes have passed, add the rest of the sauce and toss again to coat."
+        }, {
+            "type": "timer-single",
+            "time":"600",
+            "timerID":"3",
+            "caption": "bake",
+            "instructions": "Put back in the oven for another 10 minutes."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "flip the cauliflower",
+            "instructions": "After 10 minutes have passed, flip the cauliflower with a spatula."
+        }, {
+            "type": "timer-single",
+            "time":"10",
+            "timerID":"4",
+            "caption": "bake",
+            "instructions": "Put back in the oven for another 5 minutes."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/kitchenthesis/step12_3.mp4",
+            "caption": "serve",
+            "instructions": "Allow the cauliflower to cool for a few minutes, then serve (traditionally with blue cheese dressing or another creamy dressing)."
+        }
+
+    ]
+}
