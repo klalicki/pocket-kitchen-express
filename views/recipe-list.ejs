@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/main.css?v=2">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/index.css">
-    <script>
+    <!-- <script>
         //check for mobile
         window.mobileAndTabletcheck = function () {
             var check = false;
@@ -46,7 +46,7 @@
             //redirect to Sorry page
             window.location.href = "../comingsoon.html";
         }
-    </script>
+    </script> -->
     <script src="scripts/jquery-3.3.1.js"></script>
     <script src="scripts/jquery.color.js"></script>
     <script src="scripts/swiper.js"></script>
@@ -55,24 +55,7 @@
 </head>
 
 <body>
-    <!-- <div class="onboarding">
-        <div class="onboard-screen" id="onboard-1">
-            <h2>To navigate between steps of the recipe, swipe left or right.</h2>
-        </div>
-        <div class="onboard-screen" id="onboard-2">
-            <h2>To return to the main page, press this back button.</h2>
-        </div>
-        <div class="onboard-screen" id="onboard-3">
-            <h2>The status bar shows which step you are currently on, and the total number of steps in the recipe. The green
-                bar shows your progress at a glance.</h2>
-        </div>
-        <div class="onboard-screen" id="onboard-3">
-            <h2>Some recipes have built-in timers. Once you start a timer, you can pause or restart it if needed.</h2>
-        </div>
-        <div class="onboard-screen" id="onboard-4">
-            <h2>If you move to a different step of the recipe, the timer will appear in the top-right corner of the screen.</h2>
-        </div>
-    -->
+   
     </div>
     <div class="white-overlay"></div>
     <div id="top-container">
@@ -102,72 +85,27 @@
     <div class="screen-shade"></div>
     <div class="page-container">
         <div class="home-card-container">
+            
+            <% recipeMeta.forEach((item)=>{ %>
+                <div class="home-card filter-all" data-recipe-id="<%= item.slug %>">
+                    
+                    <div>
+                        <img src="<%= item.hero_img %>" alt="" class="home-card-pic">
+                        <h2 class="home-card-title"><%= item.title %></h2>
+                    </div>
+                    <div class="home-card-info-container">
+                        <div class="home-card-icon-container">
+                            <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                        </div>
+                        <div class="home-card-text-panel">
+                            <h3 class="home-card-text"><%= item.time %></h3>
+    
+                            <h3 class="home-card-text">1 hr. total</h3>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
 
-
-            <div class="home-card filter-all" data-recipe-id="sweet-potato-chili">
-                <div>
-                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/hero-img.jpg" alt="" class="home-card-pic">
-                    <h2 class="home-card-title">Sweet Potato Chili</h2>
-                </div>
-                <div class="home-card-info-container">
-                    <div class="home-card-icon-container">
-                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
-                    </div>
-                    <div class="home-card-text-panel">
-                        <h3 class="home-card-text">30 min. active</h3>
-
-                        <h3 class="home-card-text">1 hr. total</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="home-card filter-all filter-classics" data-recipe-id="easy-pizza">
-                <div>
-                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/easypizza/hero-img.jpg" alt="" class="home-card-pic">
-                    <h2 class="home-card-title">Easy Pizza</h2>
-                </div>
-                <div class="home-card-info-container">
-                    <div class="home-card-icon-container">
-                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
-                    </div>
-                    <div class="home-card-text-panel">
-                        <h3 class="home-card-text">40 min. active</h3>
-
-                        <h3 class="home-card-text">3 hr. total</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="home-card filter-all filter-classics filter-quick" data-recipe-id="mac-and-cheese">
-                <div>
-                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/hero-img.jpg" alt="" class="home-card-pic">
-                    <h2 class="home-card-title">Classic Mac & Cheese</h2>
-                </div>
-                <div class="home-card-info-container">
-                    <div class="home-card-icon-container">
-                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
-                    </div>
-                    <div class="home-card-text-panel">
-                        <h3 class="home-card-text">25 min. active</h3>
-
-                        <h3 class="home-card-text">40 min. total</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="home-card filter-all filter-classics filter-quick" data-recipe-id="chocolate-chip-cookies">
-                <div>
-                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/hero-img.jpg" alt="" class="home-card-pic">
-                    <h2 class="home-card-title">Soft & Chewy Chocolate Chip Cookies</h2>
-                </div>
-                <div class="home-card-info-container">
-                    <div class="home-card-icon-container">
-                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
-                    </div>
-                    <div class="home-card-text-panel">
-                        <h3 class="home-card-text">10 min. active</h3>
-
-                        <h3 class="home-card-text">25 min. total</h3>
-                    </div>
-                </div>
-            </div>
             <div class="home-card filter-all">
                 <div class="coming-soon-mask">
                     <h2>coming soon!</h2>

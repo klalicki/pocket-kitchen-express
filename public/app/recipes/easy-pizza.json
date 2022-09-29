@@ -4,7 +4,8 @@
         "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/hero-img.jpg",
         "description": "This classic pizza recipe makes enough dough for 2 12-inch pies. You can freeze half of the dough to make later, or make both at once!",
         "time": "about 1 hour, plus about 1 hour to rise",
-        "timercount": "5"
+        "timercount": "5",
+        "coming_soon":true
     },
     "ingredients": [{
         "name": "all-purpose flour",
