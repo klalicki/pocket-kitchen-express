@@ -1,0 +1,100 @@
+{
+    "meta": {
+        "title": "Classic Mac & Cheese",
+        "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/hero-img.jpg",
+        "description": "You'll never have to use a packet of cheese sauce again!",
+        "time": "about 40 minutes",
+        "timercount": "1"
+    },
+    "ingredients": [{
+        "name": "macaroni",
+        "qty": "8",
+        "unit": "oz.",
+        "notes": "8oz. of macaroni is about 2 cups."
+    },{
+        "name": "butter or margarine",
+        "qty": "2",
+        "unit": "tbsp.",
+        "notes": ""
+    }, {
+        "name": "flour",
+        "qty": "2",
+        "unit": "tbsp.",
+        "notes": ""
+    }, {
+        "name": "milk",
+        "qty": "1",
+        "unit": "cup",
+        "notes": "You can use dairy milk or an unsweetened plant-based milk for this recipe."
+    }, {
+        "name": "shredded cheese",
+        "qty": "1 1/2",
+        "unit": "cups",
+        "notes": "Try blending different cheeses. 1 cup of cheddar with 1/2 cup of American is a good mix to start with."
+    }],
+    "steps": [{
+        "type": "big-number",
+        "vidsrc": "",
+        "caption": "melt butter",
+        "bignum": "400°",
+        "instructions": "Preheat oven to 400° F."
+    },{
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step1-2.mp4",
+            "caption": "",
+            "instructions": "Bring 4 cups of water to boil in a large saucepan. When it has reached a rolling boil, add 8oz. of pasta."
+        },{
+            "type": "timer-single",
+            "time": "600",
+            "timerID": "0",
+            "caption": "bake",
+            "instructions": "Cook the pasta for 10 minutes, or until desired firmness."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step3.mp4",
+            "caption": "make a batter",
+            "instructions": "Drain the pasta and set aside."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step4.mp4",
+            "caption": "make a batter",
+            "instructions": "Melt 2 tbsp. of butter in the saucepan. When it has melted, add 2 tbsp. of flour and stir."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step5.mp4",
+            "caption": "add seasoning",
+            "instructions": "Add 1 cup of milk, and stir until smooth and creamy."
+        },{
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step6.mp4",
+            "caption": "add seasoning",
+            "instructions": "Add 1 1/2 cups of shredded cheese, and stir until smooth."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step7.mp4",
+            "caption": "batter the cauliflower",
+            "instructions": "Spray a casserole dish or deep baking pan with cooking spray, then pour in the cooked macaroni."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step8.mp4",
+            "caption": "spread the cauliflower",
+            "instructions": "Pour the cheese sauce over the macaroni, and stir to mix."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step10.mp4",
+            "caption": "spread the cauliflower",
+            "instructions": "If desired, sprinkle the top of the macaroni with Parmesan cheese and/or bread crumbs."
+        },{
+            "type": "timer-single",
+            "time": "600",
+            "timerID": "1",
+            "caption": "bake",
+            "instructions": "Bake at 400° F for 20 minutes, or until the top is brown and bubbling."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/step11.mp4",
+            "caption": "spread the cauliflower",
+            "instructions": "Let cool for 5 minutes before serving."
+        }
+    ]
+}

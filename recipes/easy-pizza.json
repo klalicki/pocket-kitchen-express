@@ -1,0 +1,152 @@
+{
+    "meta": {
+        "title": "Easy Pizza",
+        "hero_img": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/hero-img.jpg",
+        "description": "This classic pizza recipe makes enough dough for 2 12-inch pies. You can freeze half of the dough to make later, or make both at once!",
+        "time": "about 1 hour, plus about 1 hour to rise",
+        "timercount": "5"
+    },
+    "ingredients": [{
+        "name": "all-purpose flour",
+        "qty": 2,
+        "unit": "cups",
+        "notes": ""
+    }, {
+        "name": "active dry yeast",
+        "qty": "2",
+        "unit": "tsp.",
+        "notes": "If you don't use bulk yeast, this is equivalent to one standard packet. Any kind of yeast will work, but instant yeast will rise the fastest."
+    }, {
+        "name": "salt",
+        "qty": "1",
+        "unit": "tsp",
+        "notes": ""
+    }, {
+        "name": "olive oil",
+        "qty": "",
+        "unit": "",
+        "notes": "Any kind of vegetable oil will work, but olive oil has the best taste for pizza."
+    }, {
+        "name": "grated Parmesan cheese",
+        "qty": "",
+        "unit": "",
+        "notes": "Feel free to substitute Pecorino Romano or Asiago, or omit entirely."
+    }, {
+        "name": "tomato sauce",
+        "qty": "1/3",
+        "unit": "cup",
+        "notes": ""
+    }, {
+        "name": "Mozzarella cheese",
+        "qty": "4",
+        "unit": "oz.",
+        "notes": "If you are using shredded cheese, this is equivalent to about 1 cup."
+    }, {
+        "name": "fresh spinach [optional]",
+        "qty": "1/3",
+        "unit": "cup",
+        "notes": ""
+    }, {
+        "name": "Oregano",
+        "qty": "1",
+        "unit": "tsp.",
+        "notes": "Feel free to use any Italian herb blend if you don't have oregano."
+    }],
+    "steps": [{
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step1.mp4",
+            "caption": "",
+            "instructions": "Mix 2 tsp. yeast with 1 cup of warm water."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step2-3.mp4",
+            "caption": "make a batter",
+            "instructions": "Stir until dissolved, then add 1 tsp. salt and stir again."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step4.mp4",
+            "caption": "add seasoning",
+            "instructions": "Add 2 cups flour, and mix until smooth."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step5.mp4",
+            "caption": "cut cauliflower",
+            "instructions": "Add 1 cup more flour, and mix until all or almost all of the flour is incorporated."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step6.mp4",
+            "caption": "batter the cauliflower",
+            "instructions": "Place the dough on a lightly-floured table, and gently knead until smooth and stretchy."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step7.mp4",
+            "caption": "spread the cauliflower",
+            "instructions": "Pour about a tablespoon of olive oil in a large bowl, and add the dough. Turn the dough over in the bowl until fully coated. Put the dough in a warm place and allow to rise for at least an hour or until it has doubled in size."
+        },
+        {
+            "type": "big-number",
+            "vidsrc": "",
+            "caption": "melt butter",
+            "bignum": "450°",
+            "instructions": "Preheat oven to 450° F."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step8.mp4",
+            "caption": "melt butter",
+            "instructions": "Drizzle a pizza pan with oil, and brush or wipe it to cover the entire pan."
+        },
+
+        {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step9.mp4",
+            "caption": "make the sauce",
+            "instructions": "Turn the dough out onto a lightly floured table, and knead a few more times, adding flour if needed to prevent it from sticking to the table."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step10.mp4",
+            "caption": "melt butter",
+            "instructions": "Divide the dough in half. If you only want to make one pie now, place one of the pieces of dough in a zip-lock bag and freeze for up to a month, or refrigerate for up to a day."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step11.mp4",
+            "caption": "melt butter",
+            "instructions": "Press the dough into the oiled pizza pan, stretching it to fill the entire pan."
+        }, {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step12.mp4",
+            "caption": "add the sauce",
+            "instructions": "Slice or shred 4oz. of mozzarella cheese."
+        },
+        {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step13.mp4",
+            "caption": "add the sauce",
+            "instructions": "Drizzle the pizza with oil, and brush or wipe to coat evenly."
+        },
+        {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step14.mp4",
+            "caption": "add the sauce",
+            "instructions": "Lightly sprinkle the crust with Parmesan cheese, and spread about 1/3 cup of sauce over the crust, leaving room around the edges."
+        }, 
+        {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step15.mp4",
+            "caption": "add the sauce",
+            "instructions": "Arrange the cheese and spinach on the pizza."
+        }, {
+            "type": "timer-single",
+            "time": "420",
+            "timerID": "0",
+            "caption": "bake",
+            "instructions": "Bake the pizza on the top rack of a 450°F oven for 7-10 minutes, or until the crust and cheese have lightly browned."
+        }, 
+        {
+            "type": "video",
+            "vidsrc": "https://s3.us-east-2.amazonaws.com/pocketkitchen/easy-pizza/step16.mp4",
+            "caption": "add the sauce",
+            "instructions": "Remove the pizza from the oven, and allow to cool before slicing."
+        }
+
+    ]
+}
