@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97203736-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-97203736-5');
+    </script>
+
+    <title>pocket kitchen</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/pk-icon.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        //check for mobile
+        window.mobileAndTabletcheck = function () {
+            var check = false;
+            (function (a) {
+                if (
+                    /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i
+                    .test(a) ||
+                    /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i
+                    .test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+
+        isPhone = window.mobileAndTabletcheck();
+        if (!isPhone) {
+            //redirect to Sorry page
+            window.location.href = "../comingsoon.html";
+        }
+    </script>
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/jquery.color.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/screenfull.min.js"></script>
+    <script src="scripts/jquery.touchSwipe.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="onboarding">
+        <div class="onboard-screen" id="onboard-1">
+            <h2>To navigate between steps of the recipe, swipe left or right.</h2>
+        </div>
+        <div class="onboard-screen" id="onboard-2">
+            <h2>To return to the main page, press this back button.</h2>
+        </div>
+        <div class="onboard-screen" id="onboard-3">
+            <h2>The status bar shows which step you are currently on, and the total number of steps in the recipe. The green
+                bar shows your progress at a glance.</h2>
+        </div>
+        <div class="onboard-screen" id="onboard-3">
+            <h2>Some recipes have built-in timers. Once you start a timer, you can pause or restart it if needed.</h2>
+        </div>
+        <div class="onboard-screen" id="onboard-4">
+            <h2>If you move to a different step of the recipe, the timer will appear in the top-right corner of the screen.</h2>
+        </div>
+    -->
+    </div>
+    <div class="white-overlay"></div>
+    <div id="top-container">
+
+
+        <div id="top-bar">
+            <h2 class="app-branding">pocket kitchen</h2>
+            <button id="fullscreen-corner-btn">
+                <img src="img/fullscreen-btn.png" class="img-stretch" alt="">
+            </button>
+        </div>
+        <div id="filter-bar">
+            <h2 id="current-filter">Filter</h2>
+            <button id="filter-menu-arrow">
+                <img src="img/dropdown-button.png" alt="" class="dropdown-button">
+            </button>
+        </div>
+        <div id="filter-dropdown" class="filter-hide">
+            <h3 class="dropdown-link" data-filter="filter-all">All Recipes</h3>
+
+            <h3 class="dropdown-link" data-filter="filter-quick">Quick Eats</h3>
+
+            <h3 class="dropdown-link" data-filter="filter-classics">Classics</h3>
+
+        </div>
+    </div>
+    <div class="screen-shade"></div>
+    <div class="page-container">
+        <div class="home-card-container">
+
+
+            <div class="home-card filter-all" data-recipe-id="sweet-potato-chili">
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/sweet-potato-chili/hero-img.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Sweet Potato Chili</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">30 min. active</h3>
+
+                        <h3 class="home-card-text">1 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all filter-classics" data-recipe-id="easy-pizza">
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/easypizza/hero-img.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Easy Pizza</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all filter-classics filter-quick" data-recipe-id="mac-and-cheese">
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/mac-and-cheese/hero-img.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Classic Mac & Cheese</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">25 min. active</h3>
+
+                        <h3 class="home-card-text">40 min. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all filter-classics filter-quick" data-recipe-id="chocolate-chip-cookies">
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/hero-img.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Soft & Chewy Chocolate Chip Cookies</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">10 min. active</h3>
+
+                        <h3 class="home-card-text">25 min. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all">
+                <div class="coming-soon-mask">
+                    <h2>coming soon!</h2>
+                </div>
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/thumbs/cornbread.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Classic Cornbread</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-card filter-all filter-quick">
+                <div class="coming-soon-mask">
+                    <h2>coming soon!</h2>
+                </div>
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/thumbs/general-tso-tofu.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">General Tso's Tofu Stir Fry</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <!----
+            <div class="home-card filter-all">
+                    <div>
+                <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/thumbs/seitan-fajitas.jpg" alt="" class="home-card-pic">
+                <h2 class="home-card-title">Seitan</h2></div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div> -->
+            <div class="home-card filter-all">
+                <div class="coming-soon-mask">
+                    <h2>coming soon!</h2>
+                </div>
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/thumbs/seitan-fajitas.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Seitan Fajitas</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card filter-all">
+                <div class="coming-soon-mask">
+                    <h2>coming soon!</h2>
+                </div>
+                <div>
+                    <img src="https://s3.us-east-2.amazonaws.com/pocketkitchen/thumbs/lentil-spinach-soup.jpg" alt="" class="home-card-pic">
+                    <h2 class="home-card-title">Red Lentil & Spinach Soup</h2>
+                </div>
+                <div class="home-card-info-container">
+                    <div class="home-card-icon-container">
+                        <img src="img/timer-icon.png" alt="" class="home-card-icon">
+                    </div>
+                    <div class="home-card-text-panel">
+                        <h3 class="home-card-text">40 min. active</h3>
+
+                        <h3 class="home-card-text">3 hr. total</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    arrowstate = false;
+    // fixArrow();
+    $(document).ready(function () {
+
+        arrowstate: false;
+    })
+</script>
+<script>
+    function fixFullScreenButton() {
+        if (screenfull.enabled) {
+            if ($(window).height() == screen.height) {
+                //isFullScreen
+                console.log('is fullscreen');
+                $('#fullscreen-button, #fullscreen-corner-btn').addClass('btn-disabled');
+            } else {
+                //isNotFS
+                $('#fullscreen-button, #fullscreen-corner-btn').removeClass('btn-disabled');
+            }
+        } else {
+            $('#fullscreen-button, #fullscreen-corner-btn').addClass('btn-disabled');
+        }
+    }
+
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    };
+
+    function fixArrow() {
+
+        switch (arrowstate) {
+            case false:
+                $('#filter-dropdown').removeClass('menu-show');
+                $('.dropdown-button').removeClass('button-rotated');
+                $('.screen-shade').removeClass('screen-shade-show');
+                break;
+            case true:
+                $('.dropdown-button').addClass('button-rotated');
+                $('#filter-dropdown').addClass('menu-show');
+                $('.screen-shade').addClass('screen-shade-show');
+
+                break;
+        }
+    };
+
+    function showItems(itemStr) {
+        $('.home-card').not("." + itemStr).fadeOut();
+        $("." + itemStr).fadeIn();
+    };
+    $(document).ready(function () {
+        arrowstate = false;
+        //  fixArrow();
+        fixFullScreenButton();
+        $('.white-overlay').fadeOut();
+        $('.screen-shade').click(function () {
+            arrowstate = false;
+            fixArrow();
+        })
+
+        $('#filter-menu-arrow, #current-filter').click(function () {
+            arrowstate = !arrowstate;
+            fixArrow();
+
+        });
+
+        $('.dropdown-link').click(function () {
+            // console.log($(this).attr('data-filter'));
+            $('#current-filter').text($(this).text());
+            filterStr = $(this).attr('data-filter');
+            arrowstate = false;
+            fixArrow();
+            showItems(filterStr);
+
+        });
+        $('.home-card').click(function () {
+            targetpage = $(this).attr('data-recipe-id');
+            if (targetpage == null) {} else {
+                console.log(targetpage);
+                newURL = "recipe.html?recipe=" + targetpage;
+                //do-animations
+                $('body').fadeOut(function () {
+                    window.location.href = '' + newURL;
+                })
+
+            };
+            //console.log(window.location.hostname);
+
+
+        })
+
+
+    });
+
+    $('#fullscreen-corner-btn').click(function () {
+        console.log(
+            'tryint to start fullscreen'
+        );
+        if (screenfull.enabled) {
+            screenfull.toggle(); //re-enable this before putting live.
+            setTimeout(function () {
+                fixFullScreenButton()
+            }, 250);
+            fixFullScreenButton();
+        } else {
+            // Ignore or do something else
+        }
+        // fixHeight();
+        // $('.exit-modal-container').fadeOut();
+    });
+    $('.app-branding').click(function () {
+        setCookie('onboard', 'false', 300);
+    })
+</script>
+
+</html>
