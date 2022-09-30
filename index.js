@@ -23,8 +23,9 @@ app.get('/app', function (req, res) {
 app.get('/app/recipes/:recipeid', function (req, res) {
     //check if recipe ID is valid
     const recipeData = recipes[req.params.recipeid];
+    //console.log(recipeData.meta.title)
    // if (typeof singleRecipe !==undefined){
-        console.log(recipeData)
+    //    console.log(recipeData)
        res.render('recipe2', {recipeData:recipeData});
     //}
    // else{
