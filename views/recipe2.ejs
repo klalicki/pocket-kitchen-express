@@ -58,7 +58,7 @@
                     <h1><%=step.bignum%></h1>
                 </div>
                 <% }else if (step.type==="timer-single") { %>
-                    <div class="card card-timer" data-timer-id="<%= step.timerID %>">
+                    <div class="card card-timer" data-timer-id="<%= step.timerID %>" data-timer-seconds="<%=step.time">
                         <h1 class="timer-time"><%= secToString(step.time)%></h1>
                         <menu class="timer-buttons">
                             <button class="btn-timer btn-timer-start">START</button>
@@ -84,7 +84,7 @@
 
 </html>
 
-<!-- helper function to clean up times for timers -->
+<!-- helper functions to clean up times for timers -->
 <% function makeString(msTimeObject) {
     var tString = ""
     if (msTimeObject.hours != 0) {
