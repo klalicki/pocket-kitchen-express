@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= recipeData.meta.title %></title>
+    <title>pocket kitchen: <%= recipeData.meta.title %></title>
+    <script src="/app/scripts/recipe-ui-new.js" type="module"></script>
 </head>
+
 <body>
-    
+    <header id="top-bar">
+        <button id="btn-open-menu">
+            menu
+        </button>
+        <h1><%= recipeData.meta.title %></h1>
+        <button id="btn-full-screen">
+            fullscreen
+        </button>
+    </header>
+    <main>
+        <div class="recipe-swiper">
+            <section class="swiper-slide slide-about">
+                <div class="card card-img">
+                    <img src="<%= recipeData.meta.hero_img %>" alt="Photo of <%= recipeData.meta.title %>">
+                </div>
+                <div class="card card-text">
+                    <p>
+                        <%= recipeData.meta.description %>
+                    </p>
+                    <p>Time: <%= recipeData.meta.time %></p>
+                </div>
+            </section>
+            <section class="swiper-slide slide-ingredients">
+                <div class="card card-text">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredient-list">
+                        <% recipeData.ingredients.forEach((item)=>{ %>
+                        <li>
+                            <h3><%= `${item.qty} ${item.unit} ${item.name}`%></h3>
+                            <% if (item.notes !==""){ %>
+                            <%= item.notes %>
+                            <% } %>
+                        </li>
+                        <% });%>
+                </div>
+            </section>
+
+            <% recipeData.steps.forEach((step)=>{ %>
+            <section class="swiper-slide slide-<%=step.type%>">
+                <% if (step.type==="video"){ %>
+                <div class="card card-video">
+                    <video autoplay muted loop playsinline data-src="<%=step.vidsrc%>"></video>
+                </div>
+                <%}else if (step.type==="big-number") {%>
+                <div class="card card-big-number">
+                    <h1><%=step.bignum%></h1>
+                </div>
+                <% }else if (step.type==="timer-single") { %>
+                    <div class="card card-timer" data-timer-id="<%= step.timerID %>">
+                        <h1 class="timer-time"><%= secToString(step.time)%></h1>
+                        <menu class="timer-buttons">
+                            <button class="btn-timer btn-timer-start">START</button>
+                            <button class="btn-timer btn-timer-reset">RESET</button>
+                        </menu>
+                    </div>
+
+                <% } %>
+                <div class="card card-text">
+                    <p>
+                        <%= step.instructions %>
+                    </p>
+
+                </div>
+            </section>
+            <% });%>
+        </div>
+    </main>
+    <footer id="bottom-bar">
+
+    </footer>
 </body>
+
 </html>
+
+<!-- helper function to clean up times for timers -->
+<% function makeString(msTimeObject) {
+    var tString = ""
+    if (msTimeObject.hours != 0) {
+        tString = tString + msTimeObject.hours + ":";
+        if (msTimeObject.minutes < 10) {
+            tString = tString + "0"
+        };
+    }
+    if (msTimeObject.minutes != 0) {
+        tString = tString + msTimeObject.minutes + ":";
+        if (msTimeObject.seconds < 10) {
+            tString = tString + "0"
+        };
+    }
+
+    tString = tString + msTimeObject.seconds;
+    return tString;
+}
+
+function secToString(origSeconds) {
+    newSec = origSeconds;
+
+    hours = Math.floor(newSec / 3600);
+    newSec = newSec - (3600 * hours);
+    minutes = Math.floor(newSec / 60);
+    newSec = newSec - (60 * minutes);
+    var newTime = {
+        hours: hours,
+        minutes: minutes,
+        seconds: newSec
+    };
+    return makeString(newTime);
+
+}
+%>
