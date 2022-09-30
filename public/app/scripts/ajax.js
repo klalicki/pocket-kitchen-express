@@ -130,7 +130,7 @@ function loadContent() {
   //      curItem = '<li class="ingredient-list-item"><h6>' + '<span class="variable-quantity" data-original-qty="' + element.qty + '">' + element.qty + '</span> ' + element.unit + ' ' + element.name + '</h6><p class="ingredient-notes">' + element.notes + '</p></li>';
         // console.log(curItem);
     //    pagecontent = pagecontent + curItem;
-    });
+ //   });
    // pagecontent = pagecontent + '</ul></div></div></div>';
 
    // $('.main-swiper-wrapper').append(pagecontent);
