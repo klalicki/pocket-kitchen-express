@@ -21,10 +21,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>pocket kitchen: <%= recipeData.meta.title %> </title>
     <!--<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet">-->
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/resets.css">
-    <link rel="stylesheet" href="css/main.css?v=7">
-    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="/app/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/app/css/resets.css" type="text/css">
+    <link rel="stylesheet" href="/app/css/main.css?v=7" type="text/css">
+    <link rel="stylesheet" href="/app/css/swiper.css" type="text/css">
     <script>
         //check for mobile
         window.mobileAndTabletcheck = function () {
@@ -46,8 +46,8 @@
         }
     </script>
 
-    <script src="scripts/jquery-3.3.1.js"></script>
-    <script>
+    <script src="app/scripts/jquery-3.3.1.js"></script>
+    <!-- <script>
         //figure out how to parse recipe query
         function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
@@ -61,15 +61,15 @@
             return (false);
         };
         recipeName = getQueryVariable('recipe');
-    </script>
-    <script src="scripts/jquery.color.js"></script>
-    <script src="scripts/swiper.js"></script>
-    <script src="scripts/easytimer.min.js"></script>
+    </script> -->
+    <script src="/app/scripts/jquery.color.js"></script>
+    <script src="/app/scripts/swiper.js"></script>
+    <script src="/app/scripts/easytimer.min.js"></script>
 
-    <script src="scripts/screenfull.min.js"></script>
-    <script src="scripts/jquery.touchSwipe.min.js"></script>
+    <script src="/app/scripts/screenfull.min.js"></script>
+    <script src="/app/scripts/jquery.touchSwipe.min.js"></script>
 
-    <script src="scripts/ajax.js"></script>
+    <script src="/app/scripts/ajax.js"></script>
     <!-- script to load in content will eventually go here.-->
 </head>
 
@@ -140,10 +140,10 @@
         </div>
 
     </div>
-    <div class="loading-screen">
+     <!-- <div class="loading-screen">
         <h1>loading...
             <br>please wait</h1>
-    </div>
+    </div> 
     <div class="exit-modal-container obj-hidden">
         <div class="exit-modal">
             <img src="img/close-btn-black.png" alt="" class="exit-modal-button">
@@ -175,14 +175,14 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="app-container">
         <div id="top-bar">
             <button id="back-button">
                 <img src="img/hamburger-btn-black.png" class="img-stretch" alt="">
             </button>
-            <h2 id="top-bar-title"></h2>
+            <h2 id="top-bar-title"><%= recipeData.meta.title %></h2>
             <button id="fullscreen-corner-btn">
                 <img src="img/fullscreen-btn.png" class="img-stretch" alt="">
             </button>
