@@ -46,8 +46,8 @@ function secToString(origSeconds) {
 
 
 function appendtoMenu(content) {
-    menuItem = '<li class="menu-item">' + content + '</li>';
-    $('.menu-list').append(menuItem);
+    // menuItem = '<li class="menu-item">' + content + '</li>';
+    // $('.menu-list').append(menuItem);
 }
 
 function createTimers() {
@@ -116,25 +116,25 @@ function loadContent() {
     createTimers();
     //load meta-content
     pagecontent = "";
-    pagecontent = '<div class="swiper-slide"><div class="page-flex-container"><div class="card bleed-card"><img src="' + contentArray.meta.hero_img + '"></div><div class="card text-card"><p class="instructions">' + contentArray.meta.description + '<br>Time: ' + contentArray.meta.time + '</p></div></div>';
-    $('.main-swiper-wrapper').prepend(pagecontent);
-    appendtoMenu(contentArray.meta.title);
-    $('#top-bar-title').text(contentArray.meta.title);
-    window.document.title ='pocket kitchen: '+ contentArray.meta.title;
+    // pagecontent = '<div class="swiper-slide"><div class="page-flex-container"><div class="card bleed-card"><img src="' + contentArray.meta.hero_img + '"></div><div class="card text-card"><p class="instructions">' + contentArray.meta.description + '<br>Time: ' + contentArray.meta.time + '</p></div></div>';
+    // $('.main-swiper-wrapper').prepend(pagecontent);
+    // appendtoMenu(contentArray.meta.title);
+    //$('#top-bar-title').text(contentArray.meta.title);
+    //window.document.title ='pocket kitchen: '+ contentArray.meta.title;
 
     //load ingredients page
-    pagecontent = "";
-    pagecontent = '<div class="swiper-slide" id="ingredients-page"><div class="page-flex-container"><div class="card text-card"><h3 class="ingredient-header">Ingredients</h3><ul class="ingredient-list">';
-    contentArray.ingredients.forEach(function (element) {
+   // pagecontent = "";
+   // pagecontent = '<div class="swiper-slide" id="ingredients-page"><div class="page-flex-container"><div class="card text-card"><h3 class="ingredient-header">Ingredients</h3><ul class="ingredient-list">';
+   // contentArray.ingredients.forEach(function (element) {
 
-        curItem = '<li class="ingredient-list-item"><h6>' + '<span class="variable-quantity" data-original-qty="' + element.qty + '">' + element.qty + '</span> ' + element.unit + ' ' + element.name + '</h6><p class="ingredient-notes">' + element.notes + '</p></li>';
+  //      curItem = '<li class="ingredient-list-item"><h6>' + '<span class="variable-quantity" data-original-qty="' + element.qty + '">' + element.qty + '</span> ' + element.unit + ' ' + element.name + '</h6><p class="ingredient-notes">' + element.notes + '</p></li>';
         // console.log(curItem);
-        pagecontent = pagecontent + curItem;
+    //    pagecontent = pagecontent + curItem;
     });
-    pagecontent = pagecontent + '</ul></div></div></div>';
+   // pagecontent = pagecontent + '</ul></div></div></div>';
 
-    $('.main-swiper-wrapper').append(pagecontent);
-    appendtoMenu('Ingredients');
+   // $('.main-swiper-wrapper').append(pagecontent);
+  //  appendtoMenu('Ingredients');
 
     //load steps :)
     contentArray.steps.forEach(function (element) {

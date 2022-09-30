@@ -1,0 +1,49 @@
+<% recipeData.steps.forEach((item)=>{ 
+    switch(item.type){ 
+       case "video":%>
+<div class="swiper-slide step-slide video-step-slide">
+   <div class="page-flex-container">
+       <div class="card bleed-card"><video autoplay muted loop playsinline
+               data-src="<%=item.vidsrc %>"></video></div>
+       <div class="card text-card">
+           <p class="instructions"><%=item.instructions %></p>
+       </div>
+   </div>
+</div>'
+
+<%break;
+       case "big-number": %>
+<div class="swiper-slide step-slide video-step-slide">
+   <div class="page-flex-container">
+       <div class="card bleed-card big-number">
+           <h1><%=item.bignum%></h1>
+       </div>
+       <div class="card text-card">
+           <p class="instructions"><%=item.instructions %></p>
+       </div>
+   </div>
+</div>
+<%break;
+       case "timer-start": %>
+
+<%break;
+       case "timer-end": %>
+
+<%break;
+       case "timer-single": %>
+'<div class="swiper-slide step-slide timer-slide timer-start-slide">
+   <div class="page-flex-container">
+       <div class="timer-container" data-timer-id="<%=item.timerID%>">
+           <h1 class="timer-time"><%=item.timeVal%></h1>
+           <div class="timer-button-container"><button
+                   class="timer-button timer-start">START</button><button
+                   class="timer-button timer-reset"> RESET</button></button></div>
+       </div>
+       <div class="card text-card">
+           <p class="instructions"><%=item.instructions %></p>
+       </div>
+   </div>
+</div>
+<% break;
+   }
+   } %>

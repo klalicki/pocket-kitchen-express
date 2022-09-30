@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
+const e = require('express');
 const app = express();
 
 const appConstants = {
@@ -18,6 +19,21 @@ if (port == null || port == "") {
 app.set('view engine', 'ejs')
 app.get('/app', function (req, res) {
     res.render('recipe-list', {recipeMeta:recipeMeta});
+});
+app.get('/app/recipes/:recipeid', function (req, res) {
+    //check if recipe ID is valid
+    const recipeData = recipes[req.params.recipeid];
+   // if (typeof singleRecipe !==undefined){
+        console.log(recipeData)
+       res.render('recipe2', {recipeData:recipeData});
+    //}
+   // else{
+        ///RECIPE NOT FOUND
+        // res.render('recipe not found')
+    // }
+    
+   // console.log(req.params.recipeid)
+    // res.render('recipe-list', {recipeMeta:recipeMeta});
 });
 app.use(express.static('public'))
 
