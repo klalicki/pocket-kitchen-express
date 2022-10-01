@@ -1,0 +1,226 @@
+<div class="app-container" style="height: 851px;">
+    <div id="top-bar">
+        <button id="back-button">
+            <img src="img/hamburger-btn-black.png" class="img-stretch" alt="">
+        </button>
+        <h2 id="top-bar-title">Chocolate Chip Cookies</h2>
+        <button id="fullscreen-corner-btn" class="btn-disabled">
+            <img src="img/fullscreen-btn.png" class="img-stretch" alt="">
+        </button>
+    </div>
+    <div class="main-section">
+        <div class="persistent-timer-container">
+            <div class="persistent-timer-row">
+                <img src="img/timer-icon.png" alt="" class="persistent-timer-icon">
+                <h4 class="persistent-timer"></h4>
+            </div>
+            <div class="persistent-timer-drawer">
+                <!-- <button class="persistent-timer-button persistent-timer-pause">PAUSE</button>
+                <button class="persistent-timer-button persistent-timer-reset">RESET</button> -->
+            </div>
+
+        </div>
+
+
+
+        <div class="swiper-container main-swiper-container swiper-container-horizontal swiper-container-android">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper main-swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-active" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><img
+                                src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/hero-img.jpg">
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">These cookies are soft and chewy on the inside, with a light crust
+                                on the outside.<br>Time: about 30 minutes</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide swiper-slide-next" id="ingredients-page" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card text-card">
+                            <h3 class="ingredient-header">Ingredients</h3>
+                            <ul class="ingredient-list">
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1/2">1/2</span> cup butter or
+                                        margarine</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1/2">1/2</span> cup white
+                                        sugar</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1/4">1/4</span> cup brown
+                                        sugar</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1">1</span> tsp vanilla
+                                        extract</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1">1</span> egg</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1 1/2">1 1/2</span> cups
+                                        all-purpose flour</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="1/4">1/4</span> tsp salt</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                                <li class="ingredient-list-item">
+                                    <h6><span class="variable-quantity" data-original-qty="3/4">3/4</span> cup chocolate
+                                        chips</h6>
+                                    <p class="ingredient-notes"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card big-number">
+                            <h1>350°</h1>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Preheat oven to 350° F.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step1-2.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Melt 1/2 cup butter or margarine in a microwave-safe bowl.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step3.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Add 1/2 cup white sugar and 1/4 cup brown sugar, and stir until
+                                smooth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step4.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Add 1 tsp. vanilla and 1 egg, and stir until smooth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step5.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Add 1/2 cup of flour, 1/2 tsp. baking soda, and 1/4 tsp. salt, and
+                                stir until smooth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step7.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Add the remaining 1 cup of flour, and mix until fully combined.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step8.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Add 3/4 cup chocolate chips, and mix in with your hands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step9.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Roll the dough into golf-ball-sized pieces, and place 2-3 inches
+                                apart on a baking sheet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide timer-slide timer-start-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="timer-container" data-timer-id="0">
+                            <h1 class="timer-time">9:00</h1>
+                            <div class="timer-button-container"><button
+                                    class="timer-button timer-start">START</button><button
+                                    class="timer-button timer-reset"> RESET</button></div>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Bake in a 350° F oven for 9-11 minutes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide step-slide video-step-slide" style="width: 393px;">
+                    <div class="page-flex-container">
+                        <div class="card bleed-card"><video autoplay="" muted="" loop="" playsinline=""
+                                data-src="https://s3.us-east-2.amazonaws.com/pocketkitchen/chocolate-chip-cookies/step11.mp4"></video>
+                        </div>
+                        <div class="card text-card">
+                            <p class="instructions">Allow the cookies to cool on the baking sheet for 5-10 minutes
+                                before removing. To keep the cookies soft for longer, store them in an air-tight
+                                container.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+    </div>
+    <div id="bottom-bar">
+        <div class="progress-container">
+            <div id="progress-bar" style="width: 8.33333vw;">
+
+            </div>
+            <div id="progress-arrow" style="left: 7.83333vw;">
+                <img src="img/progress-arrow.png" alt="">
+            </div>
+        </div>
+        <div id="bottom-bar-flex">
+            <h2 class="bottom-bar-text">
+                <span id="curContainer">1</span> /
+                <span id="totalContainer">12</span>
+            </h2>
+            <h2 class="bottom-bar-text">
+
+            </h2>
+        </div>
+    </div>
+
+
+</div>
